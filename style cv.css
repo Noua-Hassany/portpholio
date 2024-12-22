@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside {
+    width: 30%;
+    height: 700px;
+    background-color: rgb(8, 8, 75);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside img:nth-child(1) {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-left: 24px;
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+    margin-top: 38px;
+    font-size: 20px;
+    margin-left: 22px;
+}
+
+aside h4 {
+    color: white;
+    margin-left: 24px;
+}
+
+main {
+    width: 70%;
+    background-color: white;
+    margin-left: 440px;
+}
+
+main h1 {
+    margin-top: 130px;
+    text-align: center;
+    font-weight: 700;
+}
+
+main > p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+main > p > span {
+    color: rgb(26, 26, 140);
+    font-size: 19px;
+}
+
+main > p, h1 {
+    margin-bottom: 200px;
+    animation: moving 3s linear;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(4px);
+        opacity: 1;
+    }
+}
+
+main section {
+    margin-top: 130px;
+}
+
+main h3 {
+    font-weight: 600;
+    color: #1a1a8c;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+main .under {
+    width: 89px;
+    height: 3px;
+    background-color: blue;
+    margin-bottom: 19px;
+}
+
+.sec3 {
+    display: flex;
+    gap: 180px;
+}
+
+@media (max-width: 768px) {
+    *{
+        font-size: 10px;
+    }
+    aside {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    main h1 {
+        font-size: 24px;
+        margin-top: 70px;
+    }
+
+    main h3 {
+        font-size: 24px;
+    }
+
+    main .under {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    main > p {
+        font-size: 16px;
+    }
+
+    .sec3 {
+        display: block;
+        margin-top: 20px;
+        gap: 0;
+    }
+}
+
